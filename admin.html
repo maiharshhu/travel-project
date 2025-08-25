@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Data - Places & Hotels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 p-8">
+    <div class="max-w-md mx-auto space-y-8">
+      <!-- Places Form -->
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-bold mb-4">Add Place</h2>
+        <form id="placeForm" class="space-y-3">
+          <input
+            name="name"
+            placeholder="Place Name"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            name="location"
+            placeholder="Location"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            name="googleMap"
+            placeholder="Google Map Link"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            name="image"
+            placeholder="Image URL"
+            class="w-full border p-2 rounded"
+          />
+          <textarea
+            name="description"
+            placeholder="Description"
+            class="w-full border p-2 rounded"
+            rows="3"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
+          >
+            Save Place
+          </button>
+        </form>
+        <div id="placeResult" class="mt-2 text-sm"></div>
+      </div>
+
+      <!-- Hotels Form -->
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-bold mb-4">Add Hotel</h2>
+        <form id="hotelForm" class="space-y-3">
+          <input
+            name="name"
+            placeholder="Hotel Name"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            name="location"
+            placeholder="Location"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            name="toBook"
+            placeholder="Booking Link"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            name="image"
+            placeholder="Image URL"
+            class="w-full border p-2 rounded"
+          />
+          <textarea
+            name="description"
+            placeholder="Description"
+            class="w-full border p-2 rounded"
+            rows="3"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700"
+          >
+            Save Hotel
+          </button>
+        </form>
+        <div id="hotelResult" class="mt-2 text-sm"></div>
+      </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
