@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBMuMGE4qqtesCjYlfUaMFWJWeOR0Wke1Q",
+    apiKey: "aaa",
     authDomain: "travel-data-7de90.firebaseapp.com",
     projectId: "travel-data-7de90",
     storageBucket: "travel-data-7de90.firebasestorage.app",
